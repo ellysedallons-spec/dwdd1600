@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ellyse Dallons">
+    <meta name="description" content="Learn about the Basics of Culinary Arts">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="travel.css">
+    <title>Culinary Basics: History</title>
+</head>
+
+<body>
+    <!-- start the page head -->
+    <header>
+        <span>Culinary Basics: The First Steps to Cooking</span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="ingredients.html">Ingredients</a></li>
+            <li><a href="tecniques.html">Techniques</a></li>
+            <li></li><a href="knife_skills.html">Knife Skills</a></li>
+            <li class="active"></li><a href="learn_more.html">Learn More</a></li>
+        </ul>
+
+    </nav>
+    <!-- start the main content -->
+    <main>
+        <h1>Learn More</h1>
+        <p>Fill out this form to help us better the site and recieve free reading materials!</p>
+
+        <form method="get" class="myform" action="thanks.html">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label> First Name*<input type="text" name="fname" required></label>
+                <label> Last Name*<input type="text" name="lname" required></label>
+                <label> Email*<input type="email" name="email" required></label>
+                <label> Cell Number*<input type="tel" name="phone" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Topics</legend>
+                <label><input type="checkbox" name="history" value="chosen"> History</label>
+                <label><input type="checkbox" name="ingredients" value="chosen"> Ingredients</label>
+                <label><input type="checkbox" name="techniques" value="chosen"> Techniques</label>
+                <label><input type="checkbox" name="knife_skills" value="chosen"> Knife Skills</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Recieving Method</legend>
+                <label><input type="radio" name="method" value="textmessage"> Text Message</label>
+                <label><input type="radio" name="method" value="email"> Email</label>
+            </fieldset>
+            <fieldset>
+                <label> Was this Service and Website helpful?
+                    <select name="time">
+                        <option value="none">Please Select</option>
+                        <option value="no">Was not helpful</option>
+                        <option value="maybe">Was a little helpful</option>
+                        <option value="yes">Was very helpful</option>
+                    </select>
+                </label>
+            </fieldset>
+        
+            <label>Comments
+                <textarea name="comments">Additional comments or suggestions</textarea>
+            </label>
+
+            <input type="submit" value="Send Request">
+
+        </form>
+    </main>
+
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2026 &bull; Ellyse Dallons &bull; Web Essentials</p>
+    </footer>
+
+
+</body>
+
+</html>
