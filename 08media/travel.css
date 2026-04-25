@@ -1,0 +1,318 @@
+/*prevent problems on different browsers*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Playfair Display", sans-serif;
+    margin: 0;
+}
+
+/* header stuff here*/
+header {
+    background-color: #FFC854;
+    padding: 1rem 10px;
+}
+
+header span {
+    color: #FF5754;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/*navigation stuff here */
+/* small screen navigation */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        color: #FF9153;
+        text-decoration: none;
+        border-bottom: solid 1 px #eee;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    nav .active a {
+        background-color: #FF9153;
+        color: white;
+        background-image: linear-gradient(to bottom, #FF7554, #FF5754);
+    }
+
+}
+
+/*end small screens */
+
+
+/* large screen navigation */
+@media only screen and (min-width: 801px) {
+    nav {
+        border-top: solid 1px #E0E6E6;
+
+    }
+
+    nav {
+        background-color: #FF5754;
+        width: 64rem;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        padding: 1.2rem 1rem .3rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #ffb154;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    nav .active a {
+        background-color: #FF7554;
+        color: #FFC854;
+    }
+
+    nav a:hover {
+        color: white;
+    }
+
+}
+
+/*end large screens */
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #FF9153
+}
+
+main h2 {
+    color: #ffb154;
+    ;
+    margin-bottom: .2rem;
+}
+
+main h3 {
+    color: #FFC854;
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: 0;
+    color: #444;
+}
+
+main ol {
+    padding: .5rem 30px;
+    background-color: #efefef;
+}
+
+main dl dt {
+    color: #FF5754;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color: #444;
+    font-size: .9rem;
+    margin-left: 20px;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main strong {
+    font-weight: 700;
+    color: #000;
+}
+
+main em {
+    font-weight: 300;
+}
+
+main address {
+    font-style: normal;
+    background-color: #FFC854;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #FF5754;
+    width: 200px;
+}
+
+main a {
+    color: #024873;
+}
+
+main a:hover {
+    color: rgb(180, 4, 18);
+}
+
+/* main image stuff here */
+
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+/* Knife image stuff here */
+
+figure.knife {
+    margin: 0 0 0 10px;
+    width: 40%;
+    float: right;
+}
+
+figure.knife img {
+    width: 100%;
+    height: auto;
+}
+figure.knife img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+
+figure.knife figcaption {
+    text-align: center;
+    font-size: .75rem;
+    color: #FF5754;
+}
+
+div.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+div.skills figure {
+    margin: 0;
+}
+
+div.skills figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #FF5754;
+}
+div.skills :hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+
+.myform fieldset {
+    border: 1px solid #FF7554;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myform legend {
+    color: #FF7554;
+    font-size: .8rem;
+}
+
+.myform label {
+    margin: .5rem;
+}
+
+.myform label,
+.myform select,
+.myform [type=text],
+.myform [type=tel],
+.myform [type=email],
+.myform textarea {
+    display: block
+}
+
+.myform [type=text],
+.myform [type=tel],
+.myform [type=email],
+.myform select,
+.myform textarea {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.myform textarea {
+    height: 6rem;
+}
+
+.myform :required {
+    background-color: rgba(255, 87, 84, 0.1);
+}
+
+.myform [type=submit] {
+    background-color: #FF9153;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: black;
+    margin: 1rem 0 0 1vw;
+}
+
+
+/* table stuff here */
+table.ing {
+width: 100%;
+border-collapse: collapse;
+}
+table.ing th {
+    background-color: #FF5754;
+    color: white;
+    padding: .6rem 3%;
+    text-align: left;
+}
+table.ing td {
+    color: #54691f;
+    padding: .4rem 3%;
+}
+table.ing tr:nth-child(odd) {
+background-color: rgba(255, 200, 84, .2);
+}
+table.ing tr:hover {
+    background-color: rgba(255, 145, 83, .3);
+}
+
+
+/*footer stuff here */
+footer {
+    background-color: #FFC854;
+    text-align: center;
+    padding: 1rem 0;
+
+}
+
+footer p {
+    margin: 0;
+    font-size: .8rem;
+    color: #444;
+    letter-spacing: 3px;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
